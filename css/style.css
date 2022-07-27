@@ -1,0 +1,274 @@
+body {
+  background: url(../img/images/fondo-home.jpg) no-repeat center center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1em;
+}
+
+button {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.container-fluid h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  text-align: center;
+  background: #0275d8;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+#app{
+  margin-top:90px;
+}
+
+
+
+.carousel img {
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 90%;
+  height: auto;
+}
+
+.imgpuertos img {
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 90%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.imgpuertos img:hover {
+  opacity: 1;
+}
+
+.imgpuertos a p {
+  color: white;
+  font-size: 200%;
+  position: absolute;
+  bottom: 5%;
+  left: 35%;
+}
+
+.imagenespecial {
+  width: 100%;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
+.navbar {
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 20px;
+  height: 60px;
+}
+
+th {
+  text-align: center;
+  background-color: #0275d8;
+  color: white;
+  border: 1px solid black;
+}
+
+#tablainventario td:hover {
+  background: rgb(41, 133, 219);
+}
+
+.footer {
+  margin:0px;
+  padding: 0px;
+  height: 40px;
+  color: black;
+}
+
+.footer div{
+  margin: 0px 10px;
+}
+
+.footer p{
+  margin:0px;
+}
+
+.footer a {
+  margin:5px;
+  height: 40px;
+  color: black !important;
+}
+
+.calculos {
+  background-color: #62898e;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid rgb(21, 89, 167);
+  border-radius: 10px;
+}
+
+.calculos h1 {
+  text-align: center;
+  background: rgb(47, 115, 192);
+  border-radius: 10px;
+  border: 2px solid rgb(9, 55, 107);
+}
+.calculos div {
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid rgb(5, 23, 43);
+}
+
+.calculos .uno {
+  border-radius: 10px;
+  background-color: rgb(150, 230, 150);
+}
+
+.calculos .dos {
+  border-radius: 10px;
+  background-color: rgb(220, 221, 166);
+}
+
+.calculos .tres {
+  border-radius: 10px;
+  background-color: rgb(240, 167, 179);
+}
+
+.calculos .cuatro {
+  border-radius: 10px;
+  background-color: rgb(114, 182, 194);
+}
+
+.resultado {
+  border-radius: 10px;
+  border: 2px solid rgb(5, 23, 43);
+  font-size: 150%;
+  background: rgb(212, 63, 63);
+}
+
+.copyleft {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.modificarnomostrar {
+  display: none;
+}
+
+
+.contenedor {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  top: 200px;
+  left: 200px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  background: white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 80%;
+  text-align: center;
+  position: fixed;
+  top: 100px;
+  left: 10%;
+}
+
+.close {
+
+  width: 50px;
+
+  float: right;
+
+}
+.actualizacion {
+  font-size: smaller;
+  float: right;
+
+
+}
+
+.botonprueba {
+
+  border: 2px solid rosybrown;
+
+  background: rgb(141, 38, 110);
+
+}
+
+#luz{
+  width: 40px;
+  height: 40px;
+  border:1px solid rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240);
+  border-radius: 50%;
+  position:absolute;
+  top:15%;
+  left:15%;
+  display: block;
+  z-index:1000;
+}
+
+/*----------------------------------- PLAN------------------------------------- */
+.seccion {
+  background: #b1b4c2;
+  border-radius: 25px;
+  color: rgb(10, 10, 10);
+}
+
+.seccion a{
+  color: rgb(27, 26, 26);
+}
+
+.seccion a:visited{
+  color: rgb(0, 0, 0);
+}
+
+.seccion a:link{
+/*   font-size: 1.1rem;
+  color: rgb(0, 0, 0); */
+}
+
+.seccion h1{
+  margin: 15px;
+  font-size: 1.8rem;
+  border:none;
+}
+
+.seccion h3{
+  font-size: 1.4rem;
+  text-align: left;
+  border:none;
+  background-color: transparent;
+}
+
+.seccion h4{
+  text-align: left;
+  border:none;
+  background-color: transparent;
+}
+
+.opaco{
+  background: none;
+  background-color: #62898e;
+}
+
+
+
+
+

@@ -1,0 +1,70 @@
+body {
+    background:url(../img/images/fondo-home.jpg) no-repeat center center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    }
+
+body, input, select, textarea {
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 1.0em;
+    }
+
+button{
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.container-fluid h1, h2, h3, h4, h5, h6 {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    text-align: center;
+    background: #0275d8;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.carousel img{
+    border: 5px solid black;
+    border-radius: 20px;
+    width: 90%;
+    height: auto;
+}
+
+.imgpuertos img{
+    border: 5px solid black;
+    border-radius: 20px;
+    width: 90%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.imgpuertos img:hover{
+    opacity:1;
+}
+
+.imgpuertos a p{
+    color: white;
+    font-size: 200%;
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+}
+
+.navbar{
+    padding:10px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+th {
+    text-align: center;
+    background-color:#0275d8;
+    color: white;
+    border: 1px solid black;
+}
+
+#tablainventario td:hover{
+    background: rgb(41, 133, 219);
+
+}

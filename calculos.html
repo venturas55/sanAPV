@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>PLAN DE INSPECCIÓN DE LAS AYUDAS A LA NAVEGACIÓN </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/npm.js"></script> -->
+    <link type="text/css" href="css/styleplano.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+    <!-- CABECERA   -->
+    <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-template">
+        <a class="navbar-brand" target="_blank" href="https://www.valenciaport.com/"><img
+                src="./img/images/logo-valenciaport-home.svg" /></a>
+        <h1>PLAN DE INSPECCIÓN DE LAS AYUDAS A LA NAVEGACIÓN </h1>
+        <div class="d-flex flex-row order-2 order-lg-3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarNavDropdown">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="./index.php"> <button type="button"
+                            class="btn btn-success btn-sm"> INICIO</button> </a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CUERPO -->
+    <div class="container-fluid">
+        <div class="row" style="margin:80px">
+            <div class="col-5 calculos">
+                <h1> I. COORDENADAS</h1>
+
+                <div class="uno">
+                    <h3>DECIMAL A WGS-84</h3>
+                    <p>Coordenada en decimal <input type="text" id="decimal1" placeholder="GG.mmmmmmm"></p>
+                    <p id="resultado1" class="resultado"></p>
+                    <button id="btnuno" class="btn btn-warning">Pasar a WGS-84</button>
+                </div>
+
+                <div class="dos">
+                    <h3>WGS-84 A DECIMAL</h3>
+                    <p>Coordenada en wgs-84 <input type="text" id="wgs2" placeholder="GGº MM.mmm'"></p>
+                    <p id="resultado2" class="resultado"></p>
+                    <button id="btndos" class="btn btn-warning">Pasar a Decimal-84</button>
+                </div>
+
+                <div class="tres">
+                    <h3>UTM A WGS-84</h3>
+                    <p>Coordenada en UTM <input type="text" id="wgs3" placeholder="GG° MM' SS.sss&quot; N"></p>
+                    <p id="resultado3" class="resultado"></p>
+                    <button id="btntres" class="btn btn-warning">Pasar a Decimal</button>
+                </div>
+            </div>
+
+
+            <div class="col-6 calculos">
+                <h1> II. ALCANCES  <button id="btncuatro" class="btn btn-warning">Calcular</button></h1>
+                
+
+
+                <div class="uno">
+                    <p> ALCANCE LUMINOSO MINIMO: <input type="text" placeholder="millas nauticas" id="alcance" value="2.3"
+                            size="2"> Millas Nauticas </p>
+                </div>
+
+                <div class="dos">
+                    <p> ZONA DE ESTUDIO <select name="visibilidad" id="visibilidad">
+                            <option value="8.172">Mediterraneo-Baleares</option>
+                            <option value="6.246">Cantabrico-Galia</option>
+                            <option value="7.469">Huelva-Cadiz</option>
+                            <option value="6.839">Sevilla</option>
+                            <option value="5.76">Ceuta</option>
+                            <option value="11.699">Canarias</option>
+                        </select>
+                        Visibilidad= <span id="visibilidadmeteo"></span>
+                    </p>
+                    <p> TIPO DE SEÑAL: <select name="tipo" id="tipo">
+                            <option value="1">Nocturna</option>
+                            <option value="2">Diurna</option>
+                            <option value="3">Enfilacion</option>
+                        </select> a=<span id="a"> </span> </p>
+                    <p> LUMINANCIA DE FONDO: <select name="fondo" id="fondo">
+                            <option value="1">Ninguna</option>
+                            <option value="2">Poca</option>
+                            <option value="3">Considerable</option>
+                        </select> Umbral= <span id="umbral"></span> </p>
+                    <p> DURACION DEL MENOR DESTELLO: <input type="text" id="destello" value="0.5" size="4"> </p>
+                </div>
+
+                <div class="tres">
+                    <p> FACTOR DE SERVICIO: <input type="text" id="coef1" value="0.75" size="1"></p>
+                    <p> FACTOR DE ACRISTALAMIENTO: <input type="text" id="coef2" value="1" size="1"></p>
+                    <p> FACTOR DE LUMINANCIA DE FONDO: <input type="text" id="coef3" value="1" size="1"></p>
+                </div>
+
+                <div class="cuatro">
+
+                    <p> INTENSIDAD DE CALCULO: <span id="Icalculo" class="resultado"> </span> Cd </p>
+                    <p> INTENSIDAD DE EFICAZ:<span id="Ieficaz" class="resultado"></span> Cd</p>
+                    <p> INTENSIDAD DE ESTACIONARIA:<span id="Iestacionaria" class="resultado"></span> Cd</p>
+                </div>
+                <br><br><br>
+                <i> Calculos basados en la recomendacion E-200 series IALA</i>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

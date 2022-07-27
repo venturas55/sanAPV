@@ -1,0 +1,23 @@
+body {
+    background: #62898e;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    }
+
+body, input, select, textarea {
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 1.0em;
+    }
+
+button{
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.navbar{
+    padding:10px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
